@@ -40,6 +40,13 @@
       .logo{
         width: 80px !important;
       }
+      .linka{
+color: #e7c671 !important;
+font-weight: bold;
+}
+.sk{  
+  color: #e7c671 !important;
+}
     </style>
   </head>
   <body>
@@ -67,21 +74,21 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item px-2">
                 <a
-                  class="nav-link fw-medium active"
+                  class="nav-link fw-medium linka active"
                   aria-current="page"
                   href="../index.html"
                   >Acceuil</a
                 >
                 <li class="nav-item px-2">
-                  <a class="nav-link fw-medium" href="./about.html">A propos</a>
+                  <a class="nav-link fw-medium linka" href="./about.html">A propos</a>
                 </li>
                 <li class="nav-item px-2">
-                  <a class="nav-link fw-medium" href="./produits.html"
+                  <a class="nav-link fw-medium linka" href="./produits.html"
                     >Produits</a
                   >
                 </li>
                 <li class="nav-item px-2">
-                  <a class="nav-link fw-medium" href="./contacts.html"
+                  <a class="nav-link fw-medium linka" href="./contacts.html"
                     >Contacts</a
                   >
                 </li>
@@ -92,9 +99,9 @@
       <section
         class="py-11 bg-light-gradient border-bottom border-white border-5">
         <div
-          class="bg-holder overlay overlay-light"
+          class="bg-holder"
           style="
-            background-image: url('../images/vanity-bag.png');
+            background-image: url('../images/photo_2023-06-06_16-52-55.jpg');
             background-size: cover;
           "></div>
         <!--/.bg-holder-->
@@ -102,8 +109,8 @@
           <div class="row flex-center">
             <div class="col-12 mb-10">
               <div class="d-flex align-items-center flex-column">
-                <h1 class="fw-normal">Lorem ipsum &amp; lorem ipsum</h1>
-                <h1 class="fs-4 fs-lg-8 fs-md-6 fw-bold">
+                <h1 class="fw-normal sk">Lorem ipsum &amp; lorem ipsum</h1>
+                <h1 class="fs-4 fs-lg-8 fs-md-6 fw-bold sk">
                   Mettre une phrase ici
                 </h1>
               </div>
@@ -114,8 +121,9 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-0" id="./about.html" style="margin-top: -23rem !important">
+      <section class="py-0 mt-8" id="./about.html">
         <div class="container">
+          <h1 class="text-center mb-5 text-black">Produits</h1>
           <div class="row g-0">
             <div class="col-md-6">
               <div class="card card-span h-100 text-white">
@@ -130,7 +138,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card card-span h-100 p-5 d-flex justify-content-center align-items-center">
+              <div class="card card-span h-100 p-2 d-flex justify-content-center align-items-center">
                 <!-- <img
                   class="img-fluid"
                   src="../images/WhatsApp Image 2023-05-03 at 23.21.33.jpeg"
@@ -139,9 +147,7 @@
                 <!-- <div class="card-img-overlay d-flex flex-center"> -->
                   <p class="btn btn-lg" href="#!">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Doloremque corrupti nulla explicabo suscipit nisi ea amet quisquam,
-                    consequuntur dolor eos similique voluptatem praesentium dicta incidunt
-                    ipsam officiis, ad tenetur repellendus.</p>
+                    Doloremque corrupti nulla explicabo suscipit nisi ea amet quisquam</p>
                 <!-- </div> -->
               </div>
             </div>
@@ -5410,6 +5416,21 @@
         <!-- ===============================================-->
         <!--    JavaScripts-->
         <!-- ===============================================-->
+        <script>
+          <!-- ACTIVE PAGE -->
+    var url = window.location.href;
+    
+    var links = document.querySelectorAll('.nav-link');
+    
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].href === url) {
+        links[i].classList.add('active');
+        links[i].style.background = 'none';
+        links[i].style.borderBottom = '2px solid #e7c671';
+      }
+    }
+    
+        </script>
         <script src="../JS/popper.min.js.téléchargement"></script>
         <script src="../style/bootstrap.min.js.téléchargement"></script>
         <script src="../JS/is.min.js.téléchargement"></script>
